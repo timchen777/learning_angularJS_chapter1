@@ -1,0 +1,23 @@
+{
+  "name": "learning_angularjs_chapter1",
+  "version": "1.0.0",
+  "description": "=========== from OReilly.Learning.AngularJS.pdf eBook ======================\r Steps To Server Files Locally\r Using NodeJS\r > git clone https://github.com/KenWilliamson/LearningAngularJS_chapter1.git\r > cd angularjs-up-and-running\r > npm init\r    (accept all defaults)\r > npm install --save http-server\r > node node_modules/http-server/bin/http-server\r connect browser to http://localhost:8080 example directory is served\r -------------- p.20 Single-Page-Applications ------------------\r the entry point of our SPA in the index.html code that follows. The\r tag <div ng-view></div> is where all dynamic content is inserted into index.html:\r -------------- p.21 Bootstrapping the Application---------------\r 1. index.html file is analyzed, and the parser looks for the ng-app tag. The line <html\r lang=\"en\" ng-app=\"helloWorldApp\"></html> shows how ng-app is defined. \r 2.  app.js is where the AngularJS application helloWorldApp is defined as an\r AngularJS module, and this is the entry point into the application.\r var helloWorldApp = angular.module('helloWorldApp', [\r     'ngRoute',     \r     'helloWorldControllers' \r ]);\r ---------------------Dependency Injection---------------------------\r 3. AngularJS uses dependency injection to load module dependencies \r when an application first starts. In app.js code (a) AngularJS ngRoute module, \r which provides routing to the application. (b)helloWorldControllers.",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timchen777/learning_angularJS_chapter1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timchen777/learning_angularJS_chapter1/issues"
+  },
+  "homepage": "https://github.com/timchen777/learning_angularJS_chapter1#readme"
+}
